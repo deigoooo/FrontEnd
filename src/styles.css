@@ -1,1 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
+.imgFondo 
+{
+    padding: 0 !important;
+    border-bottom: 3px solid rgba(124, 124, 124, 0.986);
+    height: auto;
+}
+#imgRedonda 
+{
+    /*position: absolute;*/
+    margin: 5%;
+    max-width: 90% !important;
+    max-height: 90% !important;
+    border: 3px solid rgba(124, 124, 124, 0.986);  
+    /*transform: translate(-0%,-55%);*/
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.425);
+}
+.titulo
+{
+    padding: 0 !important;
+    font: 'Poppins';
+    font-style: normal;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.titulo2
+{
+    padding: 0 !important;
+    font: 'Poppins';
+    font-style: normal;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.753);
+}
+.fondo
+{
+    background-color: #38040E;
+    width: auto;
+    height: auto;
+}
+.tarjeta
+{
+    background-color: #640D14;
+    border: 5px solid rgba(0,0,0,0);
+    max-width: 1200px;
+    height: auto;
+    border-radius: 25px;
+}
+.contenedorT
+{
+    margin-left: 15px;
+}
+.titulo3
+{
+    font: 'Poppins';
+    background-color: #800E13;
+    width:150px;
+    height:30px;
+    color:white;
+    text-align:center;
+    box-shadow: 6px 6px 1px #323232;
+}
+.parrafo
+{
+    color:rgba(255, 255, 255, 0.753);
+    line-height: 2;
+}
+.contact
+{
+    border: 5px solid #800E13;
+    border-radius: 25px;
+}
