@@ -72,3 +72,16 @@
     border: 5px solid #800E13;
     border-radius: 25px;
 }
+.foter 
+{
+    background-color: rgb(24, 24, 24);
+}
+footer 
+{
+    color: #fefefe;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 2px -2ox 5px #999;
+}
