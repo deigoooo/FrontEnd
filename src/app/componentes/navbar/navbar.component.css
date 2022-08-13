@@ -10,7 +10,7 @@
     width:100vw;
     /*height: ;*/
     background-color: #010C13;
-    color: #fff;
+    color: #FCFCFC;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -18,7 +18,7 @@
     display: flex; 
     justify-content: space-between;   
     background-color: #010C13;
-    color:#fff;
+    color:#FCFCFC;
     padding: 1em;
 }
 
@@ -33,9 +33,9 @@
 }
 
 .menu a {
-    color: #fff; 
+    color: #FCFCFC; 
     text-decoration: none; 
-    padding:10px 20px  
+    padding:5px 10px  
 }
 .menu a:hover{
     background-color:#a10411;
