@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+.inicio{
+    font-family: 'Raleway', sans-serif;
+    width: 100vw;
+    height:100vh;
+    background-image: url(../../../assets/img/biblioteca1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}

@@ -9,7 +9,7 @@
     font-family: 'Raleway', sans-serif;
     background-color:#38040E;
     width: 100%;
-    height: 41vw;
+    height: 38vw;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
@@ -40,12 +40,14 @@ p {
     margin:0 auto;
     position:relative;
     width: 50%;
-
     overflow:hidden;
-    border-radius: 6px;
-    box-shadow: 0px 15px 25px
+
+    box-shadow: 10px 25px 35px
     rgba(0,0,0,0.50);
     cursor: pointer;    
+}
+.contenedor figure:hover{
+    box-shadow: none;
 }
 .contenedor figure img{
     width: 100%;
@@ -65,21 +67,20 @@ p {
     text-align: center;
 }
 .contenedor figure:hover > .acerca{
+    
     opacity: 1;
     visibility: visible;
 }
-.contenedor figure:hover > .acerca h3{
-    color:black;
-    font-size: 10;
+.contenedor figure:hover > .acerca p{
+    color:rgb(0, 0, 0);
+    font-size:25px;
+    font-weight: 100;
     margin-top:20px;
     margin-bottom: 15px;  
     transition:all 500ms ease-in-out;
-    line-height:1;
+    
 }
 
-.contenedor figure .acerca h3{
-    color:black;
-    transition:all 500ms ease-out;
 
-}
+
 
