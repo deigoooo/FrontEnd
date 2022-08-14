@@ -15,6 +15,7 @@
 }
 
 .navbar {
+    
     display: flex; 
     justify-content: space-between;   
     background-color: #010C13;
@@ -26,16 +27,18 @@
     display: flex;
     width:50%;
     justify-content: space-around;
+    
 }
 
 .menu li {
+    margin-top: 8px;
     list-style: none;
 }
 
 .menu a {
     color: #FCFCFC; 
     text-decoration: none; 
-    padding:5px 10px  
+    padding:5px 20px  
 }
 .menu a:hover{
     background-color:#a10411;
@@ -43,7 +46,22 @@
     transition: ease-in-out .3s;
 }
 .menu .active {
+    
     color: #FCFCFC;
 }
 
+.login{
+    color: #FCFCFC;
+    padding: 5px 20px;
+    background-color: #a10411;
+    border-radius: 20px;
+    cursor: pointer;
+
+    
+}
+.login:hover{
+    background-color:#ffffff;
+    color: #a10411;
+    transition: ease-in-out .3s;
+}
 
