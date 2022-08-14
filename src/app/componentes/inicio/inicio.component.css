@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+.inicio{
+    font-family: 'Raleway', sans-serif;
+    background-image: url(../../../assets/img/bosque.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 95vh;
+}
+.capa{
+    background:linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75))
+}
+.mensa{
+    color:#FCFCFC;
+    max-width: 1500px;
+    height:100vh;
+    margin: auto;
+    columns:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    
+}
+.bienvenida{
+    border:3px solid #FCFCFC;
+    padding:10px 25px;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.mensa h1{
+    font-size: 50px;
+    text-align: center;
+}
+.mensa h1 span{
+    color:#a10411;
+}
+.mensa p{
+    font-size: 20px;
+}

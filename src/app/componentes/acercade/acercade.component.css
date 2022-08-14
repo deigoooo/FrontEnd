@@ -7,9 +7,13 @@
 
 .inicio{
     font-family: 'Raleway', sans-serif;
-    background-color:#38040E;
+/*    background-image: url(../../../assets/img/biblioteca.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background:-moz-linear-gradient(red,black);*/
+
     width: 100%;
-    height: 38vw;
+    height: 95vh;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
@@ -41,14 +45,13 @@ p {
     position:relative;
     width: 50%;
     overflow:hidden;
-
-    box-shadow: 10px 25px 35px
-    rgba(0,0,0,0.50);
+    box-shadow: 10px 25px 35px black;
     cursor: pointer;    
 }
-.contenedor figure:hover{
+/*.contenedor figure:hover{
     box-shadow: none;
-}
+}*/
+
 .contenedor figure img{
     width: 100%;
     height: 100%;

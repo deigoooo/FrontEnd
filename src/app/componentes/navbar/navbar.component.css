@@ -5,7 +5,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.logos img{
+    width:100px;
+    margin:0;
+    padding:0;
+}
 .vista {
     width:100vw;
     /*height: ;*/
@@ -20,7 +24,7 @@
     justify-content: space-between;   
     background-color: #010C13;
     color:#FCFCFC;
-    padding: 1em;
+    padding: 0;
 }
 
 .menu{
@@ -38,7 +42,7 @@
 .menu a {
     color: #FCFCFC; 
     text-decoration: none; 
-    padding:5px 20px  
+    padding:3px 10px  
 }
 .menu a:hover{
     background-color:#a10411;
@@ -56,6 +60,7 @@
     background-color: #a10411;
     border-radius: 20px;
     cursor: pointer;
+    margin-right: 2em;;
 
     
 }
