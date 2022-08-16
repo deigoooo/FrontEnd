@@ -9,8 +9,29 @@
     font-family: 'Raleway', sans-serif;
     width: 100vw;
     height:100vh;
-    background-image: url(../../../assets/img/biblioteca1.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
+    background:#080e20;
+    text-align: center;
+    align-items: center;
+}
+.subrayado{
+    height:4px;
+    width: 18em;
+    background-color: #a10411;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.inicio h2{
+    color: #fff;
+    padding-top: 5em;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.inicio h5{
+    color: #fff;
+    font-size: 20px;
+}
+.inicio h6{
 
+    color: rgb(141, 141, 141);
+    font-size: 20px;
 }

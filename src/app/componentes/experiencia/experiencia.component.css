@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+.inicio{
+    font-family: 'Raleway', sans-serif;
+    width: 100vw;
+    height:100vh;
+    background-image: url("../../../assets/img/experiencia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+}
+.subrayado{
+    height:4px;
+    width: 18em;
+    background-color: #a10411;
+    margin: auto;
+    margin-bottom: 15px;
+
+}
+.frente{
+    background:linear-gradient(rgba(5, 7, 12, 0.5),rgba(5,7,12,0.5));
+    height:100vh;
+    width: 100vw;
+
+}
+.capa{
+    background-color: rgba(255, 255, 255, 0.712);
+    width:1000px;
+
+}
