@@ -7,82 +7,80 @@
 
 .inicio{
     font-family: 'Raleway', sans-serif;
-/*    background-image: url(../../../assets/img/biblioteca.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background:-moz-linear-gradient(red,black);*/
-
-    width: 100%;
-    height: 95vh;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    width: 100vw;
+    height: auto;
+}
+.info{
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content:center;
+    padding: 3%;
+    }
+.info h2{
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+
 }
-.info-content{
-    margin-left: 10%;
-}
-h1 {
-    font-size: 3em;
-    color:#FCFCFC;
-}
-span {
-    color:#a10411;
-}
-p {
-    color:#FCFCFC;
+.subrayado{
+    height:4px;
+    width: 15em;
+    background-color: #a10411;
+    margin-left: 0;
+    margin-bottom: 15px;
 }
 .contenedor{
-
-    height:100%;
-    width: 100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    
+    height:auto; 
 }
-.contenedor figure{
-    margin:0 auto;
-    position:relative;
-    width: 50%;
-    overflow:hidden;
-    box-shadow: 10px 25px 35px black;
-    cursor: pointer;    
-}
-/*.contenedor figure:hover{
-    box-shadow: none;
-}*/
-
-.contenedor figure img{
-    width: 100%;
+.imagen{
     height: 100%;
-    transition:all 500ms ease-out
+    background: white;
+    overflow: hidden;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    cursor: pointer;
 }
-.contenedor figure .acerca{
-    padding:5px;
-    position: absolute;
+.imagen {
+    position: relative;
+    overflow:hidden;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.imagen figure img{
+    width: 100%;
+    height: auto;
+    transition:all 500ms ease-out;    
+}
+.capa{
+    position:absolute;
+    padding-top: 50%;
     top:0;
     width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.7);
+    height:100%;
+    background:rgba(255, 255, 255, 0.6);
     transition:all 500ms ease-out;
     opacity: 0;
     visibility: hidden;
     text-align: center;
 }
-.contenedor figure:hover > .acerca{
-    
+.imagen figure:hover > .capa{
     opacity: 1;
-    visibility: visible;
+    visibility:visible;
 }
-.contenedor figure:hover > .acerca p{
-    color:rgb(0, 0, 0);
-    font-size:25px;
-    font-weight: 100;
-    margin-top:20px;
-    margin-bottom: 15px;  
-    transition:all 500ms ease-in-out;
-    
+.capa h4{
+    font-size: 40px;
 }
+.capa h5{
+    font-size: 20px;
+}
+
+
+
+
+
 
 
 

@@ -8,13 +8,13 @@
 .inicio{
     font-family: 'Raleway', sans-serif;
     background-image: url(../../../assets/img/bosque.jpg);
-
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
     height: 95vh;
 }
 .capa{
+    height:95vh;
     background:linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75))
 }
 .mensa{
@@ -45,4 +45,11 @@
 }
 .mensa p{
     font-size: 20px;
+}
+.subrayado{
+    height:4px;
+    width: 38vw;
+    background-color: #a10411;
+    margin-left: 46%;
+
 }
