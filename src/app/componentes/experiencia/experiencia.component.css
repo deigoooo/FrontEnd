@@ -6,6 +6,7 @@
 }
 
 .inicio{
+    position:relative;
     font-family: 'Raleway', sans-serif;
     width: 100vw;
     height:100vh;
@@ -19,20 +20,38 @@
 }
 .subrayado{
     height:4px;
-    width: 18em;
+    width: 20em;
     background-color: #a10411;
     margin: auto;
     margin-bottom: 15px;
 
 }
 .frente{
-    background:linear-gradient(rgba(5, 7, 12, 0.5),rgba(5,7,12,0.5));
+    position:absolute;
+
+    top: 0;
     height:100vh;
     width: 100vw;
+    background:linear-gradient(rgba(5, 7, 12, 0.5),rgba(5,7,12,0.5));
+    display: flex;
+    align-items: center;
+
 
 }
 .capa{
+    text-align: center;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.712);
-    width:1000px;
+    width:auto;
+    height:auto;
+    border-radius: 10px;
+    margin:0px auto;
+    padding:15px;
 
+}
+.capa h4{
+    padding-top: 5px;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
 }
