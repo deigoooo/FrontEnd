@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+.inicio{
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.inicio footer{
+    color: #fff;
+    background-color:black;
+    width: 100%;
+}

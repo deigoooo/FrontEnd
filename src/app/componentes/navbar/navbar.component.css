@@ -5,23 +5,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-.logos img{
-    width:100px;
-    margin:0;
-    padding:0;
-}
-.vista {
-    width:100vw;
-    /*height: ;*/
-    background-color: #080e20;
-    color: #FCFCFC;
-    font-family: 'Raleway', sans-serif;
-}
+
 
 .navbar {
+    color:#fff;
     display: flex; 
     justify-content: space-between;   
-    background-color: #010C13;
+    background-color: #080e20;
     padding: 0px;
 
 }
