@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+.inicio{
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.subrayado{
+    height:4px;
+    width: 18em;
+    background-color: #a10411;
+    margin: auto;
+    margin-bottom: 30px !important;
+}
+.formulario{
+    border: 3px solid rgba(0,0,0);
+    background-color: #fff;
+    padding:20px; 
+    width: 60%;  
+    margin:0px auto;
+    border-radius:10px;
+}
+
+.container{
+    margin:0px auto;
+}
+.container h2{
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.btn{
+    color: #fff;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #a10411;
+    border: 4px solid #a10411;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #a10411;
+}
