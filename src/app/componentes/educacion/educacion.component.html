@@ -1,24 +1,39 @@
-<div class="inicio"> 
-  <div class="tarjeta">  
-      <h2>Educacion</h2>
-        <div class="subrayado"></div>
-      <br>
-      
-        <h5 class="titulo2">Programador Web Full Stack Jr</h5>
-        <h6 class="parrafo">#YoProgramo - Finalizado - 2022</h6>
-      <br>
-          
-        <h5 class="titulo2">Tecnico Superior en Telecomunicaciones</h5>
-        <h6 class="parrafo">Instituto Superior Santo Domingo - Finalizado - 2020</h6>
-      <br>
+<div class="inicio" > 
+  <h2>Educacion</h2>
+  <div class="subrayado"></div>
 
-        <h5 class="titulo2">Ingenieria en Computacion</h5>
-        <h6 class="parrafo">Facultad de Ciencias Exactas Fisicas y Naturales - Incompleto</h6>
-      <br>
+  <br>
+  <div class="row m-2 tarjeta" *ngFor="let educacion of educaciones">  
+      <div class="col-10">
 
-        <h5 class="titulo2">Tecnico y Bachiller de nivel medio en Electronica Industrial</h5>
-        <h6 class="parrafo">Instituto Tecnico Salesiano Villada - Finalizado - 2006</h6>
-      <br>
-
+        <h5 class="titulo2">{{educacion.titulo}}</h5>
+        <h6 class="parrafo"><span>{{educacion.institucion}} </span>- {{educacion.estado}} - {{educacion.fechaIniEdu}} / {{educacion.fechaFinEdu}}</h6>
+        
+      </div>
+      <div class="col-2 ">
+        <a
+          (click)="onOpenModal('modificar',educacion)"
+          class="btn text-muted bg-dark tooltips p-1"
+          data-placement="top"
+          data-toggle="tooltip"
+          data-original-title="Modificar"
+          ><i class="fa fa-pencil"></i></a>
+        <a
+          (click)="onOpenModal('eliminar',educacion)"
+          class="btn text-dark bg-danger tooltips p-1 ps-2 pe-2"
+          data-placement="top"
+          data-toggle="tooltip"
+          data-original-title="Borrar"
+          ><i class="fa fa-times"></i></a>
+      </div>
     </div>
+    <br>
+    <button type="button" class="boton" (click)="onOpenModal('crear')">
+      <a class="nav-link" style="color:red">
+      Añadir Elemento<span class="sr-only">(current)</span>
+      </a>
+    </button>
+    
 </div>
+
+
