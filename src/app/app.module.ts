@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
-import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { AcercadeComponent } from './componentes/acercade/acercade.component';
@@ -14,6 +12,8 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './componentes/login/login.component';
+import { HomeComponent } from './componentes/home/home.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,8 @@ import { LoginComponent } from './componentes/login/login.component';
     ContactoComponent,
     FooterComponent,
     InicioComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

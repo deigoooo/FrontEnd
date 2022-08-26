@@ -8,6 +8,7 @@ export interface Persona{
     correo:string;
     sobre_mi:string;
     url_foto:string;
+    url_fondo:string;
     usuario:string;
     pass:string;
 

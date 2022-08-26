@@ -10,7 +10,7 @@ import { Persona } from '../model/persona';
 export class InicioService {
   private apiServerUrl=environment.apiBaseUrl;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http : HttpClient) { }
 
   public getPersona():Observable<Persona>{
     return this.http.get<Persona>(`${this.apiServerUrl}/persona/id/2`);

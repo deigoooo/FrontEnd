@@ -16,8 +16,9 @@ export class InicioComponent implements OnInit {
   constructor(private inicioService : InicioService) { }
 
   ngOnInit(): void {
-    this.getPer;
+    this.getPer();   
   }
+ 
   public getPer():void{
     this.inicioService.getPersona().subscribe({
       next: (response:Persona) =>{

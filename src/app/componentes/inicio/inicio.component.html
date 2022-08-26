@@ -1,12 +1,18 @@
-<div class="inicio">
-    <div class="capa">
+<div class="inicio" *ngIf="persona">
+    <img [src]="persona.url_fondo">
+    <div class="capa">    
         <div class="mensa">
             <p class="bienvenida">Bienvenidos</p>
-            <h1>Soy <span>Diego Fernando Ramirez</span>, desarrollador Full Stack web</h1>
-            <div class="subrayado"></div>
+            <h1>Soy <span>{{persona.nombre + " " +persona.apellido}} </span>, desarrollador Full Stack web</h1>
+            <div class="subrayado"></div>            
             <p>Y te invito a que me conozcas.</p>
-            <div *ngIf="persona">
-                <h1>{{persona.nombre}}</h1>
-            </div>
+            
     </div>
 </div>
+<!--
+<div *ngIf="persona">
+    <h1>{{persona.nombre}}</h1>
+</div>
+[ngStyle]="{'background-image': 'url({{persona.url_fondo}})'}"
+https://i.ibb.co/G5RgHqN/bosque.jpg
+-->
