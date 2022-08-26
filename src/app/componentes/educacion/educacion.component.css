@@ -6,16 +6,22 @@
 }
 
 .inicio{
-    text-align: center;
+    position:relative;
     display: flex;
-    align-items: center;
     font-family: 'Raleway', sans-serif;
     width: 100%;
     height:100vh;
     background:#080e20;
+    overflow: hidden;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
 }
+
 .tarjeta{
+    text-align: center;    
     margin:0px auto;
+    
 }
 .subrayado{
     height:4px;

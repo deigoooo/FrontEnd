@@ -11,5 +11,4 @@ export interface Persona{
     url_fondo:string;
     usuario:string;
     pass:string;
-
 }
