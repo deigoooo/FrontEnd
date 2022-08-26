@@ -16,18 +16,20 @@
     justify-content:center;
     text-align: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .tarjeta{
     text-align: center;    
     margin:0px auto;
     
+    
 }
 .subrayado{
     height:4px;
     width: 18em;
     background-color: #a10411;
-    margin: auto;
+    /*margin: auto;*/
     margin-bottom: 15px;
 }
 .inicio h2{
@@ -43,4 +45,15 @@
 
     color: rgb(141, 141, 141);
     font-size: 20px;
+}
+.inicio h6 span{
+
+    color: rgb(109, 16, 16);
+
+}
+.botones{
+    display: flex;
+    margin-left: 85%;
+    /*align-items: flex-end;*/
+    padding:5px;
 }
