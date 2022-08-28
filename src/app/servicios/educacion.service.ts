@@ -24,5 +24,8 @@ export class EducacionService {
   public eliminarEducacion(educacionId: number):Observable<void>{
     return this.http.delete<void>(`${this.apiServerUrl}/educacion/eliminar/${educacionId}`);
   }
+  public buscarEducacion(idEdu: number):Observable<Educacion>{
+    return this.http.get<Educacion>(`${this.apiServerUrl}/educacion/buscar/${idEdu}`);
+  }
 
 }

@@ -14,6 +14,8 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './componentes/login/login.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NuevaEducacionComponent } from './componentes/educacion/nueva-educacion.component';
+import { ModificarEducacionComponent } from './componentes/educacion/modificar-educacion.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     InicioComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    NuevaEducacionComponent,
+    ModificarEducacionComponent
   ],
   imports: [
     BrowserModule,

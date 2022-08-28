@@ -4,34 +4,31 @@
 
   <br>
   <div class="row m-2 tarjeta" *ngFor="let educacion of educaciones">  
-      <div class="col-10">
+  
+    <div class="col-lg-l 10">
 
         <h5 class="titulo2">{{educacion.titulo}}</h5>
         <h6 class="parrafo"><span>{{educacion.institucion}} </span>- {{educacion.estado}} - {{educacion.fechaIniEdu}} / {{educacion.fechaFinEdu}}</h6>
         
       </div>
-      <div class="col-2 ">
+      <div class="col-lg-2 ">
         <a
-          (click)="onOpenModal('modificar',educacion)"
+          routerLink="/modificarEducacion/{{educacion.idEdu}}"
           class="btn text-muted bg-dark tooltips p-1"
-          data-placement="top"
-          data-toggle="tooltip"
-          data-original-title="Modificar"
           ><i class="fa fa-pencil"></i></a>
         <a
-          (click)="onOpenModal('eliminar',educacion)"
+          (click)="onEliminarEducacion(educacion.idEdu)"
           class="btn text-dark bg-danger tooltips p-1 ps-2 pe-2"
-          data-placement="top"
-          data-toggle="tooltip"
-          data-original-title="Borrar"
           ><i class="fa fa-times"></i></a>
       </div>
     </div>
     <br>
-    <button type="button" class="boton" (click)="onOpenModal('crear')">
-      <a class="nav-link" style="color:red">
-      Añadir Elemento<span class="sr-only">(current)</span>
-      </a>
+    <button 
+    type="button"
+    class="boton"
+    routerLink="/nuevaEducacion"
+    >
+    Añadir educacion
     </button>
     
 </div>
