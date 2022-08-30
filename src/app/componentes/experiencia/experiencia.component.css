@@ -1,88 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 
-*{
-    margin:0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-
-.inicio{
-    display:flex;
-    position: relative;
-    font-family: 'Raleway', sans-serif;
-    width: 100%;
-    height:100vh;
-    background-image: url("https://i.ibb.co/mqJ2yt1/experiencia.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*
-    position:absolute;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    */
-    
-
+.container-fluid {
+  font-family: "Raleway", sans-serif;
+  background-image: url("../../../assets/img/experiencia.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+  margin-top: 0;
 }
-.subrayado{
-    height:4px;
-    width: 29em;
-    background-color: #a10411;
-    margin: auto;
-    margin-bottom: 3em;
+.gama {
+  display: flex;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
+  align-items: center;
 }
-.gama{
-    position:absolute;
-    top: 0;
-    height:100vh;
-    width: 100vw;
-    background:linear-gradient(rgba(5, 7, 12, 0.5),rgba(5,7,12,0.5));
+.tarjeta {
+  margin: 0px auto;
+  border-radius: 5px;
+  height: auto;
+  width: 65%;
+  background-color: rgba(255, 255, 255, 0.479);
+  padding: 10px;
+  text-align: center;
 }
-.table h4{
-    padding-top: 5px;
-    text-transform: uppercase;
-    font-size: 3em;
-    text-align: center;
-    color: #fff;
-    
+#experiencia {
+  padding-top: 5px;
+  text-transform: uppercase;
+  font-size: 3em;
+  text-align: center;
+  color: rgb(0, 0, 0);
 }
-.container{
-    height:100vh;
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin:0px auto;
+.col-sm {
+  border-bottom: 1px solid #fff;
 }
-.table{
-    background-color:#96969670;
-    padding:2em;
-    border-radius: 5px;
-    
-}
-.table td{
-    border-bottom: 2px solid rgba(255, 255, 255, 0.315);
-    font-weight: bold;
-    color:black;
-}
-.table tr{
-    text-align: center;
-    font-size: 1em;
-    text-transform: uppercase;
+.subrayado {
+  height: 4px;
+  width: 55%;
+  background-color: #a10411;
+  margin: auto;
+  margin-bottom: 3em;
 }
 .boton {
-    background-color: #080e206c;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #fff;
-    outline: 2px solid #fff;
-    padding: 5px 15px;
-    position: relative;
-    overflow: hidden;
-    transition: color 1s;
+  margin-top: 10px;
+  background-color: #080e206c;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  outline: 2px solid #fff;
+  padding: 5px 15px;
+  position: relative;
+  overflow: hidden;
+  transition: color 1s;
+}
+.boton:hover {
+  background-color: #fff;
+  color: #080e20;
+}
+@media (max-width: 700px) {
+  .tarjeta {
+    font-size: 60%;
+    width: 90%;
   }
-  .boton:hover {
-    background-color: #fff;
-      color:#080e20;
-  }
+}

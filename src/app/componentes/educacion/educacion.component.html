@@ -1,25 +1,69 @@
-<div class="inicio" > 
+<div class="container-fluid vh-100">
+  <div class="tarjeta">
+    <div class="row">
+      <div class="col-sm">
+        <h2 id="titulo">Educacion</h2>
+        <div class="subrayado"></div>      
+      </div>
+      <div class="row" *ngFor="let educacion of educaciones">
+        <div class="col-sm">
+          {{educacion.titulo}}
+        </div>
+        <div class="col-sm">
+          {{educacion.institucion}}
+        </div>
+        <div class="col-sm">
+          {{educacion.estado}}
+        </div>
+        <div class="col-sm">
+          {{educacion.fechaIniEdu}}/{{educacion.fechaFinEdu}}
+        </div>
+        <div class="col-sm">
+          <a
+            routerLink="/modificarEducacion/{{educacion.idEdu}}"
+            class="btn text-muted bg-dark tooltips p-1"
+            ><i class="fa fa-pencil"></i></a>
+          <a
+            (click)="onEliminarEducacion(educacion.idEdu)"
+            class="btn text-dark bg-danger tooltips p-1 ps-2 pe-2"
+          ><i class="fa fa-times"></i></a>
+        </div>
+      </div> 
+    </div>
+    <button 
+    type="button"
+    class="boton"
+    routerLink="/nuevaEducacion"
+    >
+    Añadir educacion
+    </button> 
+  </div>
+</div>
+
+
+
+
+<!-- <div class="inicio" > 
   <h2>Educacion</h2>
   <div class="subrayado"></div>
 
   <br>
   <div class="row m-2 tarjeta" *ngFor="let educacion of educaciones">  
   
-    <div class="col-lg-10">
+    <div class="col-lg-12">
 
         <h5 class="titulo2">{{educacion.titulo}}</h5>
-        <h6 class="parrafo"><span>{{educacion.institucion}} </span>- {{educacion.estado}} - {{educacion.fechaIniEdu}} / {{educacion.fechaFinEdu}}</h6>
-        
-      </div>
-      <div class="col-lg-2 ">
-        <a
+        <h6 class="parrafo"><span>{{educacion.institucion}}</span> {{educacion.estado}} - {{educacion.fechaIniEdu}}/{{educacion.fechaFinEdu}}
+          <a
           routerLink="/modificarEducacion/{{educacion.idEdu}}"
           class="btn text-muted bg-dark tooltips p-1"
           ><i class="fa fa-pencil"></i></a>
-        <a
+          <a
           (click)="onEliminarEducacion(educacion.idEdu)"
           class="btn text-dark bg-danger tooltips p-1 ps-2 pe-2"
           ><i class="fa fa-times"></i></a>
+        </h6>
+        
       </div>
     </div>
     <br>
@@ -31,6 +75,6 @@
     Añadir educacion
     </button>
     
-</div>
+</div> -->
 
 

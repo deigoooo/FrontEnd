@@ -1,14 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 
+.inicio{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+}
+
 .container{
-    font-family: "Raleway", sans-serif;
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    text-align:center;
-    background-color: #85FFBD;
-    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    width:60vw;
+    
+/*
+    
+    */
 }
 
 .tarjeta{

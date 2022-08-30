@@ -1,42 +1,79 @@
-<div class="inicio">
+<div class="container-fluid vh-100">
   <div class="gama">
-    <div class="container">
+    <div class="tarjeta">
       <div class="row">
-        <div class="col-sm-12">
-          <div class="table">
-            <h4 id="experencia">Experiencia Laboral</h4>
-            <div class="subrayado"></div>
-
-            <tr *ngFor="let experiencia of experiencias">
-              <td>{{ experiencia.nombreEmpresa }}</td>
-              <td>{{ experiencia.puesto }}</td>
-              <td>
-                {{ experiencia.fechaIniExp }}-{{ experiencia.fechaFinExp }}
-              </td>
-              <td>{{ experiencia.referencia }}</td>
-              <td>{{ experiencia.contacto }}</td>
-              <td>
-                <a
-                  routerLink="/modificarExperiencia/{{ experiencia.idExp }}"
-                  class="btn text-muted bg-dark tooltips p-1"
-                  ><i class="fa fa-pencil"></i
-                ></a>
-              </td>
-              <td>
-                <a
-                  (click)="onEliminarExperiencia(experiencia.idExp)"
-                  class="btn text-dark bg-danger tooltips p-1 ps-2 pe-2"
-                  ><i class="fa fa-times"></i
-                ></a>
-              </td>
-            </tr>
-            <br>
-            <button type="button" class="boton" routerLink="/nuevaExperiencia">
-              Añadir experiencia
-            </button>
-          </div>
+        <div class="col">
+          <h4 id="experiencia">Experiencia Laboral</h4>
+          <div class="subrayado"></div>
         </div>
       </div>
+      <div class="row" *ngFor="let experiencia of experiencias">
+        <div class="col-sm">
+          {{ experiencia.nombreEmpresa }}          
+        </div>
+        <div class="col-sm">
+          {{ experiencia.puesto }}
+        </div>
+        <div class="col-sm">
+          {{ experiencia.fechaIniExp }}-{{ experiencia.fechaFinExp }}
+        </div>
+        <div class="col-sm">
+          {{ experiencia.referencia }}-{{ experiencia.contacto }}          
+        </div>
+        <div class="col-sm">
+          <a
+          routerLink="/modificarExperiencia/{{ experiencia.idExp }}"
+          class="btn text-muted bg-dark p-1"
+          ><i class="fa fa-pencil"></i
+          ></a>
+          <a
+          (click)="onEliminarExperiencia(experiencia.idExp)"
+          class="btn text-dark bg-danger p-1 ps-2 pe-2"
+          ><i class="fa fa-times"></i
+          ></a>
+        </div>
+      </div>
+      <button type="button" class="boton" routerLink="/nuevaExperiencia">
+        Añadir experiencia
+      </button>
     </div>
-  </div>
+  </div>  
 </div>
+
+
+
+
+  <!--Tengo
+              <div class="table">
+              <h4 id="experencia">Experiencia Laboral</h4>
+              <div class="subrayado"></div>
+
+              <tr *ngFor="let experiencia of experiencias">
+                <td>{{ experiencia.nombreEmpresa }}</td>
+                <td>{{ experiencia.puesto }}</td>
+                <td>
+                  {{ experiencia.fechaIniExp }}-{{ experiencia.fechaFinExp }}
+                </td>
+                <td>{{ experiencia.referencia }}</td>
+                <td>{{ experiencia.contacto }}</td>
+                <td>
+                  <a
+                    routerLink="/modificarExperiencia/{{ experiencia.idExp }}"
+                    class="btn text-muted bg-dark tooltips p-1"
+                    ><i class="fa fa-pencil"></i
+                  ></a>
+                </td>
+                <td>
+                  <a
+                    (click)="onEliminarExperiencia(experiencia.idExp)"
+                    class="btn text-dark bg-danger tooltips p-1 ps-2 pe-2"
+                    ><i class="fa fa-times"></i
+                  ></a>
+                </td>
+              </tr>
+              <br>
+              <button type="button" class="boton" routerLink="/nuevaExperiencia">
+                Añadir experiencia
+              </button>
+            </div>
+  -->

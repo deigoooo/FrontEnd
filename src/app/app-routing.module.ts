@@ -11,6 +11,8 @@ import { ModificarExperienciaComponent } from './componentes/experiencia/modific
 import { NuevaExperienciaComponent } from './componentes/experiencia/nueva-experiencia.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
+import { ModificarSkillsComponent } from './componentes/skills/modificar-skills.component';
+import { NuevaSkillsComponent } from './componentes/skills/nueva-skills.component';
 import { SkillsComponent } from './componentes/skills/skills.component';
 
 const routes: Routes = [
@@ -21,10 +23,12 @@ const routes: Routes = [
   { path: 'educacion', component: EducacionComponent },
   { path: 'experiencia', component: ExperienciaComponent },
   { path: 'skills', component: SkillsComponent },
-  { path: 'nuevaEducacion', component:NuevaEducacionComponent },
-  { path: 'modificarEducacion/:idEdu', component:ModificarEducacionComponent},
-  { path: 'nuevaExperiencia', component:NuevaExperienciaComponent},
-  { path: 'modificarExperiencia/:idExp', component:ModificarExperienciaComponent}
+  { path: 'nuevaEducacion', component: NuevaEducacionComponent },
+  { path: 'modificarEducacion/:idEdu', component: ModificarEducacionComponent },
+  { path: 'nuevaExperiencia', component: NuevaExperienciaComponent },
+  { path: 'modificarExperiencia/:idExp', component: ModificarExperienciaComponent },
+  { path: 'nuevaSkills', component: NuevaSkillsComponent },
+  { path: 'modificarSkills/:idSki', component: ModificarSkillsComponent },
 ];
 
 @NgModule({

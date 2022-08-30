@@ -1,4 +1,43 @@
-<div class="inicio">
+<div class="container-fluid vh-100">
+  <div class="tarjeta">
+    <div class="row">
+      <h2 id="titulo">Habilidades</h2>
+      <div class="subrayado"></div>
+    </div>
+    <div class="row m-2" *ngFor="let skills of skillss">
+      <h3 style="color:#fff;">
+        {{ skills.habilidad }}
+        <a
+          routerLink="/modificarSkills/{{skills.idSki}}"
+          class="btn text-muted bg-dark tooltips p-1"
+          ><i class="fa fa-pencil"></i
+        ></a>
+        <a
+          (click)="onEliminarSkills(skills.idSki)"
+          class="btn text-dark bg-danger tooltips p-1 ps-2 pe-2"
+          ><i class="fa fa-times"></i
+        ></a>
+      </h3>
+      <div class="progress">
+        <div
+          class="progress-bar"
+          role="progressbar"
+          style="width:{{ skills.nivel }}%"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          {{ skills.nivel }}%
+        </div>
+  </div>  
+</div>
+<button type="button" class="boton" routerLink="/nuevaSkills">
+  Añadir habilidades
+</button>
+  </div>
+</div>
+
+
+<!-- <div class="inicio">
   <div class="container">
     <div class="row">
       <div class="col">
@@ -9,7 +48,7 @@
           <h3>
             {{ skills.habilidad }}
             <a
-              routerLink="/modificarEducacion/"
+              routerLink="/modificarSkills/{{skills.idSki}}"
               class="btn text-muted bg-dark tooltips p-1"
               ><i class="fa fa-pencil"></i
             ></a>
@@ -23,7 +62,7 @@
             <div
               class="progress-bar"
               role="progressbar"
-              style="width: {{ skills.nivel }}%"
+              style="width:{{ skills.nivel }}%"
               aria-valuemin="0"
               aria-valuemax="100"
             >
@@ -32,77 +71,12 @@
           </div>
         </div>
 
-        <button type="button" class="boton" routerLink="/nuevaEducacion">
+        <button type="button" class="boton" routerLink="/nuevaSkills">
           Añadir habilidades
         </button>
       </div>
     </div>
   </div>
 </div>
+ -->
 
-<!--<div class="container tarjeta p-4">
-    <div class="row">
-      <div class="col-12">
-        <div class="titulo3">
-          <h4 id="skills">Skills</h4>
-        </div>
-        <br>
-        <div>
-          <label for="range1" class="form-label titulo2">Habilidades Tecnicas</label>
-            <div class="progress" style="height: 30px;">
-                <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" style="width:90%"></div>
-            </div>
-        </div>
-        <br>
-        <div>
-          <label for="range2" class="form-label titulo2">Resolucion de Conflictos</label>
-            <div class="progress" style="height: 30px;">
-                <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" style="width:80%"></div>
-            </div>
-        </div>
-        <br>
-        <div>
-            <label for="range2" class="form-label titulo2">JS</label>
-              <div class="progress" style="height: 30px;">
-                  <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" style="width:65%"></div>
-              </div>
-        </div>
-        <br>
-
-        <div>
-            <label for="range2" class="form-label titulo2">HTML</label>
-              <div class="progress" style="height: 30px;">
-                  <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" style="width:90%"></div>
-              </div>
-        </div>
-        <br>
-        <div>
-            <label for="range2" class="form-label titulo2">CSS</label>
-              <div class="progress" style="height: 30px;">
-                  <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" style="width:90%"></div>
-              </div>
-        </div>
-        <br>
-        <div>
-            <label for="range2" class="form-label titulo2">GITHUB</label>
-              <div class="progress" style="height: 30px;">
-                  <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" style="width:60%"></div>
-              </div>
-        </div>
-        <br>
-        <div>
-            <label for="range2" class="form-label titulo2">TS</label>
-              <div class="progress" style="height: 30px;">
-                  <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" style="width:55%"></div>
-              </div>
-        </div>
-        <br>
-        
-      </div>
-
-    </div>
-  </div>
-
-<br>
-<br>
--->
