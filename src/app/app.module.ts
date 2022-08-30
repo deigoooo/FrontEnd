@@ -16,6 +16,8 @@ import { HomeComponent } from './componentes/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NuevaEducacionComponent } from './componentes/educacion/nueva-educacion.component';
 import { ModificarEducacionComponent } from './componentes/educacion/modificar-educacion.component';
+import { NuevaExperienciaComponent } from './componentes/experiencia/nueva-experiencia.component';
+import { ModificarExperienciaComponent } from './componentes/experiencia/modificar-experiencia.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { ModificarEducacionComponent } from './componentes/educacion/modificar-e
     LoginComponent,
     HomeComponent,
     NuevaEducacionComponent,
-    ModificarEducacionComponent
+    ModificarEducacionComponent,
+    NuevaExperienciaComponent,
+    ModificarExperienciaComponent
   ],
   imports: [
     BrowserModule,

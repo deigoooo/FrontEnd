@@ -1,27 +1,42 @@
 <div class="inicio">
-    <div class="frente">
-      <div class="capa">
-          <h4 id="experencia">Experiencia </h4>
-          <div class="subrayado"></div>
+  <div class="gama">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="table">
+            <h4 id="experencia">Experiencia Laboral</h4>
+            <div class="subrayado"></div>
 
-          <br>
-
-          <h5 class="titulo2">TELECOM ARGENTINA S.A.</h5>
-          <h6 class="parrafo">Tecnico Instalador revisador - 2008 / actualidad - Ref Sergio Blejer (Supervisor) - cel 3515328460</h6>
-          <br>
-
-          <h5 class="titulo2">MINISTERIO DE EDUCACION</h5>
-          <h6 class="parrafo">Administrador de Red - 2013 / 2018 -Ipet N70 -Ref. Oscar Navarro (Director) -cel 3515947029</h6>
-          <br>
-
-          <h5 class="titulo2">MINISTERIO DE EDUCACION</h5>
-          <h6 class="parrafo">Profesor Interino en Informatica - 2016 / 2017 - Plan Mas por vos - Ref. Julio del Pino (Inspector General) - cel 3516456454</h6>
-          <br>
-
-          <h5 class="titulo2">DIRECCION DE ENERGIAS RENOVABLES Y COMUNICACION </h5>
-          <h6 class="parrafo">Tecnico en Telecomunicaciones - 2010 - Dakar Argentina - Ref. Ing. Victor Moyano - cel 3515941202</h6>
-          <br>
+            <tr *ngFor="let experiencia of experiencias">
+              <td>{{ experiencia.nombreEmpresa }}</td>
+              <td>{{ experiencia.puesto }}</td>
+              <td>
+                {{ experiencia.fechaIniExp }}-{{ experiencia.fechaFinExp }}
+              </td>
+              <td>{{ experiencia.referencia }}</td>
+              <td>{{ experiencia.contacto }}</td>
+              <td>
+                <a
+                  routerLink="/modificarExperiencia/{{ experiencia.idExp }}"
+                  class="btn text-muted bg-dark tooltips p-1"
+                  ><i class="fa fa-pencil"></i
+                ></a>
+              </td>
+              <td>
+                <a
+                  (click)="onEliminarExperiencia(experiencia.idExp)"
+                  class="btn text-dark bg-danger tooltips p-1 ps-2 pe-2"
+                  ><i class="fa fa-times"></i
+                ></a>
+              </td>
+            </tr>
+            <br>
+            <button type="button" class="boton" routerLink="/nuevaExperiencia">
+              Añadir experiencia
+            </button>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
 </div>
-

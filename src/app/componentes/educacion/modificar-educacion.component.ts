@@ -10,20 +10,17 @@ import { EducacionService } from 'src/app/servicios/educacion.service';
   styleUrls: ['./modificar-educacion.component.css'],
 })
 export class ModificarEducacionComponent implements OnInit {
-  
-  public educacion:Educacion[]=[];
-  edu:Educacion=null;
-  public modificarEducacion:Educacion|undefined;
+  public educacion: Educacion[] = [];
+  edu: Educacion = null;
+  public modificarEducacion: Educacion | undefined;
 
   constructor(
     private educacionService: EducacionService,
     private activatedRouter: ActivatedRoute,
     private router: Router
-
   ) {}
 
   ngOnInit(): void {
-    
     const id = this.activatedRouter.snapshot.params['idEdu'];
     this.educacionService.buscarEducacion(id).subscribe(
       (data) => {
@@ -37,15 +34,15 @@ export class ModificarEducacionComponent implements OnInit {
     );
   }
 
-  public onModificarEducacion(): void{    
+  public onModificarEducacion(): void {
     this.educacionService.modificarEducacion(this.edu).subscribe({
-      next:(response:Educacion)=>{
+      next: (response: Educacion) => {
         console.log(response);
         this.router.navigate(['']);
       },
-      error:(error:HttpErrorResponse)=>{
-      alert('No se pudo modificar');
-      }
-    })
+      error: (error: HttpErrorResponse) => {
+        alert('No se pudo modificar');
+      },
+    });
   }
 }

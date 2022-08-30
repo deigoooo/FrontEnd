@@ -1,0 +1,75 @@
+<div class="container" *ngIf="exp">
+  <div class="row">
+    <div class="tarjeta">
+      <form (ngSubmit)="onModificarExperiencia()" novalidate #f="ngForm">
+        <div class="form-group">
+          <label for="nombreEmpresa">Nombre de la Empresa</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombreEmpresa"
+            name="nombreEmpresa"
+            [(ngModel)]="exp.nombreEmpresa"
+            required=""
+          />
+        </div>
+        <div class="form-group">
+          <label for="estado">Puesto</label>
+          <input
+            type="text"
+            class="form-control"
+            id="puesto"
+            name="puesto"
+            [(ngModel)]="exp.puesto"
+            required=""
+          />
+        </div>
+        <div class="form-group">
+          <label for="fechaIniExp">Fecha de inicio</label>
+          <input
+            type="text"
+            class="form-control"
+            id="fechaIniExp"
+            name="fechaIniExp"
+            [(ngModel)]="exp.fechaIniExp"
+            required=""
+          />
+        </div>
+        <div class="form-group">
+          <label for="fechaFinExp">Fecha de finalizacion</label>
+          <input
+            type="text"
+            class="form-control"
+            id="fechaFinExp"
+            name="fechaFinExp"
+            [(ngModel)]="exp.fechaFinExp"
+            required=""
+          />
+        </div>
+        <div class="form-group">
+          <label for="titutlo">Referencia</label>
+          <input
+            type="text"
+            class="form-control"
+            id="referencia"
+            name="referencia"
+            [(ngModel)]="exp.referencia"
+            required=""
+          />
+        </div>
+        <div class="form-group">
+          <label for="titutlo">Numero de contacto</label>
+          <input
+            type="text"
+            class="form-control"
+            id="contacto"
+            name="contacto"
+            [(ngModel)]="exp.contacto"
+            required=""
+          />
+        </div>
+        <button class="boton">Modificar experiencia</button>
+      </form>
+    </div>
+  </div>
+</div>

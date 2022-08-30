@@ -24,7 +24,7 @@ export class NuevaEducacionComponent implements OnInit {
     const educacion=new Educacion(this.institucion, this.estado, this.fechaIniEdu, this.fechaFinEdu, this.titulo);
     this.educacionService.crearEducacion(educacion).subscribe(
       data=>{
-        alert("Nueva Experiencia añadida");
+        alert("Nueva educacion añadida");
         this.router.navigate(['/educacion']);
     },err =>{
       alert("la operacion fallo");
