@@ -26,7 +26,7 @@
 }
 .subrayado{
     height:4px;
-    width: 11em;
+    width: 22em;
 
     background-color: #a10411;
     margin: auto;
@@ -40,19 +40,43 @@
     padding-right: 20px;
     border-radius: 10px;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.555);
-    transition: ease-in-out .3s;
+    transition: all .3s;
 }
+/*
 .col:hover{
     box-shadow: none;
     transition: ease-in-out .3s;
 }
-
+*/
 .progress-bar{
     background-color:#a10411;
 }
 .progress{
-    background-color:rgba(0, 0, 0, 0)0.555);
+    margin:10px;
+    background-color:rgb(255, 255, 255);
 }
+
+.boton {
+    margin-top: 15px;
+    background-color: #080e20;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    outline: 2px solid #fff;
+    padding: 5px 15px;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s;
+  }
+  .boton:hover {
+    background-color: #fff;
+      color:#080e20;
+  }
+  .tarjeta h3{
+    margin:5px;
+  }
+  
 
 
 
