@@ -1,70 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Qwitcher+Grypen:wght@700&family=Raleway:wght@500&display=swap');
 
-*{
-    margin:0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-
-.inicio{
-    font-family: 'Raleway', sans-serif;
-    width: 100%;
+.perfil{
+    width:100%;
     height:100vh;
-}
-.info{
-    background-color:#fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    padding: 3%;
-    }
-#sobremi{
-    text-transform: uppercase;
-    font-size: 50px;
-    text-align: center;
-
-}
-.subrayado{
-    text-align: center;
-    height:4px;
-    width: 15em;
     background-color: #080e20;
-    margin-left: 0;
-    margin-bottom: 15px;
-}
-.imagen{
-    z-index: 1;
     display: flex;
-    margin:5%;
-    border:4px solid #080e20;
-    padding: 5%;
-    justify-content:center;
-    text-align:center;
+    justify-content: center;
     align-items: center;
-    cursor: pointer;
+    flex-flow: column wrap;
+    box-shadow: 15px 0px 30px rgba(0, 0, 0, 0.329);
+}
+.container-fluid {
+  font-family: "Raleway", sans-serif;
+}
+.imgRedonda{
+    background-color: rgba(255, 255, 255, 0);
+    display: inline-block;
     position: relative;
- 
+    width:300px;
+    height:300px;
+    overflow: hidden;
+    border-radius: 50%;
 }
-.capa{
-    position:absolute;
-    background-color: rgba(0, 0, 0, 0.349);
-
-
+.imgRedonda img{
+    margin-left: 15%;
+    margin-bottom: 50%;
+    width:auto;
+    height:100%;
+    display:block;
+    
 }
-.capa:hover {
-    visibility: visible; 
-    opacity: 1;
+.sub{
+    width:90%;
+    height:3px;
+    background-color:rgb(255, 255, 255);
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
-.capa h4{
-    font-size: 40px;
+.perfil{
+    padding:5%;
+    color:white;  
+    font-family: 'Playfair Display', serif;    
 }
-.capa h5{
-    font-size: 20px;
+.so{
+    position: absolute;
+    top:65%;
+    left: .3em;
+}
+.so h1{
+    position: relative;
+    left:70px;
+    left:0;
+    font-size: 80px;
+    left: 10%;
 }
 
+@media (max-width: 700px) {
+    .perfil {
+      height:auto;
 
-
-
-
-
-
+    }
+  }

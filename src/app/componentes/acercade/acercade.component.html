@@ -1,29 +1,20 @@
 <div class="container-fluid vh-100">
   <div class="row">
-    <div class="col-sm-4">
-      <div class="imagen">
-          <img [src]="persona.url_foto" class="img-fluid">
-          <div class="capa">
-            <h4>datos personales</h4>
-            <br>
-            <h5>fecha de nacimiento: {{persona.fechaNac}}</h5>
-            <br>
-            <h5>domicilio: {{persona.domicilio}}</h5>
-            <br>
-            <h5>telefono: {{persona.telefono}}</h5>
-            <br>
-            <h5>mail: {{persona.correo}}</h5>
-          </div>
+    <div class="col-xs-4">
+      <div class="perfil">
+        <div class="imgRedonda">
+          <img [src]="persona.url_foto" alt="">
+        </div>
+        <div class="sub"></div>
+        <div class="so"><h1>SO</h1></div>
+        <div class="bre"><h1>BRE</h1></div>
+        <div class="mi"><h1>MI</h1></div>
+        
       </div>
     </div>
-    <div class="col-sm-8">
-      <h2 id="sobremi">Sobre mi</h2>
-      <div class="subrayado"></div>
-      <p>
-        {{persona.sobre_mi}}
-
+    <div class="col-xs-8">
+      <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium molestias quia eos delectus dolorem. Neque, quos ex, iste adipisci in, veritatis quis consectetur voluptate aspernatur culpa ad pariatur quae quod.</h4>
     </div>
-
   </div>
 </div>
 
