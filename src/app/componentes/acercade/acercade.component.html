@@ -1,24 +1,30 @@
-<div class="container-fluid vh-100">
+<div class="container-fluid vh-100" *ngIf="persona">
   <div class="row">
-    <div class="col-xs-4">
+    <div class="col-md-4">
       <div class="perfil">
         <div class="imgRedonda">
-          <img [src]="persona.url_foto" alt="">
+          <img [src]="persona.url_foto" alt="" />
         </div>
         <div class="sub"></div>
-        <div class="so"><h1>SO</h1></div>
-        <div class="bre"><h1>BRE</h1></div>
-        <div class="mi"><h1>MI</h1></div>
-        
+        <div class="titulo">
+          <h1>sobre mi</h1>
+        </div>
       </div>
     </div>
-    <div class="col-xs-8">
-      <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium molestias quia eos delectus dolorem. Neque, quos ex, iste adipisci in, veritatis quis consectetur voluptate aspernatur culpa ad pariatur quae quod.</h4>
+    <div class="col-md-8">
+      <div class="texto">
+        <h4>{{ persona.sobre_mi }}</h4>
+        <div class="boton1">
+          <a
+            routerLink="/modificarAcercade/{{ persona.id }}"
+            class="btn text-muted bg-dark tooltips p-1"
+            ><i class="fa fa-pencil"></i
+          ></a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
-
 
 <!-- <div class="inicio" *ngIf="persona">
   <div class="row">

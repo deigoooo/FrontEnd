@@ -38,31 +38,49 @@
 .sub{
     width:90%;
     height:3px;
-    background-color:rgb(255, 255, 255);
-    margin-top: 1%;
-    margin-bottom: 1%;
+    background-color:#a10411;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 .perfil{
     padding:5%;
     color:white;  
     font-family: 'Playfair Display', serif;    
 }
-.so{
-    position: absolute;
-    top:65%;
-    left: .3em;
+.titulo{    
+    background-color:#080e20;
+    width:90%;
+    height:50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
-.so h1{
-    position: relative;
-    left:70px;
-    left:0;
-    font-size: 80px;
-    left: 10%;
+.titulo h1{
+    margin:0 auto;
+}
+.texto{
+    padding: 10%;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    height:100%;
+}
+.texto h1{
+    margin:0 auto;
+}
+.boton1{
+    position:absolute;
+    bottom:15px;
+    right:15px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 780px) {
     .perfil {
       height:auto;
-
+    }
+    .imgRedonda{
+        width:200px;
+        height:200px;
     }
   }

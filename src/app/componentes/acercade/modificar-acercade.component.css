@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+
+.inicio{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+}
+
+.container{
+    width:60vw;
+    
+/*
+    
+    */
+}
+.tarjeta{
+    display:block;
+    padding:15px;
+    border: none;
+    background-color:rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.boton {
+  background-color: #080e206c;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  outline: 2px solid #fff;
+  padding: 5px 15px;
+  position: relative;
+  overflow: hidden;
+  transition: color 1s;
+}
+.boton:hover {
+  background-color: #fff;
+    color:#080e20;
+}
+  .tarjeta form input{
+    text-align: center;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: none;
+    border-bottom: 2px solid rgba(83, 83, 83, 0.342);
+    margin-bottom: 10px;
+  }
+  .tarjeta form label{
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+  }

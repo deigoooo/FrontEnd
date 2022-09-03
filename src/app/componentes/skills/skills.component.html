@@ -4,8 +4,36 @@
       <h2 id="titulo">Habilidades</h2>
       <div class="subrayado"></div>
     </div>
-    <div class="row m-2" *ngFor="let skills of skillss">
-      <h3 style="color:#fff;">
+    <div class="row m-2 align-middle text-uppercase carta" *ngFor="let skills of skillss">
+      <div class="col-md-2">
+        <h3 style="color:#fff;">
+          {{ skills.habilidad }}
+        </h3> 
+      </div>
+      <div class="col-md-8">
+        <div class="progress">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            style="width:{{ skills.nivel }}%"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <a
+          routerLink="/modificarSkills/{{skills.idSki}}"
+          class="btn text-muted bg-dark tooltips p-1"
+          ><i class="fa fa-pencil"></i
+        ></a>
+        <a
+          (click)="onEliminarSkills(skills.idSki)"
+          class="btn text-dark bg-danger tooltips p-1 ps-2 pe-2"
+          ><i class="fa fa-times"></i
+        ></a>
+      </div>
+<!--       <h3 style="color:#fff;">
         {{ skills.habilidad }}
         <a
           routerLink="/modificarSkills/{{skills.idSki}}"
@@ -18,18 +46,11 @@
           ><i class="fa fa-times"></i
         ></a>
       </h3>
-      <div class="progress">
-        <div
-          class="progress-bar"
-          role="progressbar"
-          style="width:{{ skills.nivel }}%"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        >
+      
           {{ skills.nivel }}%
         </div>
-  </div>  
-</div>
+      </div>   -->
+    </div>
 <button type="button" class="boton" routerLink="/nuevaSkills">
   Añadir habilidades
 </button>
@@ -37,46 +58,4 @@
 </div>
 
 
-<!-- <div class="inicio">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h2>Habilidades</h2>
-        <div class="subrayado"></div>
-
-        <div class="tarjeta" *ngFor="let skills of skillss">
-          <h3>
-            {{ skills.habilidad }}
-            <a
-              routerLink="/modificarSkills/{{skills.idSki}}"
-              class="btn text-muted bg-dark tooltips p-1"
-              ><i class="fa fa-pencil"></i
-            ></a>
-            <a
-              (click)="onEliminarSkills(skills.idSki)"
-              class="btn text-dark bg-danger tooltips p-1 ps-2 pe-2"
-              ><i class="fa fa-times"></i
-            ></a>
-          </h3>
-          <div class="progress">
-            <div
-              class="progress-bar"
-              role="progressbar"
-              style="width:{{ skills.nivel }}%"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              {{ skills.nivel }}%
-            </div>
-          </div>
-        </div>
-
-        <button type="button" class="boton" routerLink="/nuevaSkills">
-          Añadir habilidades
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
- -->
 

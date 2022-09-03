@@ -20,6 +20,7 @@ import { NuevaExperienciaComponent } from './componentes/experiencia/nueva-exper
 import { ModificarExperienciaComponent } from './componentes/experiencia/modificar-experiencia.component';
 import { NuevaSkillsComponent } from './componentes/skills/nueva-skills.component';
 import { ModificarSkillsComponent } from './componentes/skills/modificar-skills.component';
+import { ModificarAcercadeComponent } from './componentes/acercade/modificar-acercade.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ModificarSkillsComponent } from './componentes/skills/modificar-skills.
     NuevaExperienciaComponent,
     ModificarExperienciaComponent,
     NuevaSkillsComponent,
-    ModificarSkillsComponent
+    ModificarSkillsComponent,
+    ModificarAcercadeComponent
   ],
   imports: [
     BrowserModule,

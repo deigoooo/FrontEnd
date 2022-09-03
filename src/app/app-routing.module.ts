@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { AcercadeComponent } from './componentes/acercade/acercade.component';
+import { ModificarAcercadeComponent } from './componentes/acercade/modificar-acercade.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { ModificarEducacionComponent } from './componentes/educacion/modificar-educacion.component';
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'modificarExperiencia/:idExp', component: ModificarExperienciaComponent },
   { path: 'nuevaSkills', component: NuevaSkillsComponent },
   { path: 'modificarSkills/:idSki', component: ModificarSkillsComponent },
+  { path: 'modificarAcercade/:id', component:ModificarAcercadeComponent}
 ];
 
 @NgModule({

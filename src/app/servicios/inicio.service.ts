@@ -18,4 +18,7 @@ export class InicioService {
   public modificarPersona(persona: Persona):Observable<Persona>{
     return this.http.put<Persona>(`${this.apiServerUrl}/persona/modificar`,persona);
   }
+  public buscarPersona(id: number):Observable<Persona>{
+    return this.http.get<Persona>(`${this.apiServerUrl}/persona/buscar/${id}`);
+  }
 }
