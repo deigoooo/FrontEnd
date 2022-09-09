@@ -1,79 +1,30 @@
-<div class="container-fluid vh-100">
-  <div class="gama">
-    <div class="tarjeta">
-      <div class="row">
-        <div class="col">
-          <h4 id="experiencia">Experiencia Laboral</h4>
-          <div class="subrayado"></div>
-        </div>
-      </div>
-      <div class="row" *ngFor="let experiencia of experiencias">
-        <div class="col-sm">
-          <p>{{ experiencia.nombreEmpresa }}</p>      
-        </div>
-        <div class="col-sm">
-          <p>{{ experiencia.puesto }}</p>
-        </div>
-        <div class="col-sm">
-          <p>{{ experiencia.fechaIniExp }}-{{ experiencia.fechaFinExp }}</p>
-        </div>
-        <div class="col-sm">
-          <p>{{ experiencia.referencia }}-{{ experiencia.contacto }}</p>          
-        </div>
-        <div class="col-sm">
-          <a
-          routerLink="/modificarExperiencia/{{ experiencia.idExp }}"
-          class="btn text-muted bg-dark p-1"
-          ><i class="fa fa-pencil"></i
-          ></a>
-          <a
-          (click)="onEliminarExperiencia(experiencia.idExp)"
-          class="btn text-dark bg-danger p-1 ps-2 pe-2"
-          ><i class="fa fa-times"></i
-          ></a>
-        </div>
-      </div>
-      <button type="button" class="boton" routerLink="/nuevaExperiencia">
-        Añadir experiencia
-      </button>
+<div class="container-fluid">
+  <div class="tarjeta">
+    <h2 id="titulo">Experiencia Laboral</h2>
+    <div class="subrayado"></div> 
+    <div class="info">
+      <ul class="lista"*ngFor="let experiencia of experiencias">
+        <li><h4>{{ experiencia.nombreEmpresa }}</h4></li>
+          <h5>{{ experiencia.puesto }}</h5>
+          <p>{{ experiencia.fechaIniExp }} - {{ experiencia.fechaFinExp }}</p>
+          <p>{{ experiencia.referencia }} - {{ experiencia.contacto }}</p>
+          <div class="btncontrol" *ngIf="isLogged">
+            <a
+              routerLink="/modificarExperiencia/{{ experiencia.idExp }}"
+              class="btnm"
+              ><i class="fa fa-pencil"></i></a>
+            <a
+              (click)="onEliminarExperiencia(experiencia.idExp)"
+              class="btnd"
+            ><i class="fa fa-times"></i></a>
+          </div>
+      </ul>      
     </div>
-  </div>  
+    <button 
+        type="button"
+        class="boton"
+        routerLink="/nuevaExperiencia"
+        *ngIf="isLogged"
+        >Añadir experiencia</button> 
+  </div>
 </div>
-
-
-
-
-  <!--Tengo
-              <div class="table">
-              <h4 id="experencia">Experiencia Laboral</h4>
-              <div class="subrayado"></div>
-
-              <tr *ngFor="let experiencia of experiencias">
-                <td>{{ experiencia.nombreEmpresa }}</td>
-                <td>{{ experiencia.puesto }}</td>
-                <td>
-                  {{ experiencia.fechaIniExp }}-{{ experiencia.fechaFinExp }}
-                </td>
-                <td>{{ experiencia.referencia }}</td>
-                <td>{{ experiencia.contacto }}</td>
-                <td>
-                  <a
-                    routerLink="/modificarExperiencia/{{ experiencia.idExp }}"
-                    class="btn text-muted bg-dark tooltips p-1"
-                    ><i class="fa fa-pencil"></i
-                  ></a>
-                </td>
-                <td>
-                  <a
-                    (click)="onEliminarExperiencia(experiencia.idExp)"
-                    class="btn text-dark bg-danger tooltips p-1 ps-2 pe-2"
-                    ><i class="fa fa-times"></i
-                  ></a>
-                </td>
-              </tr>
-              <br>
-              <button type="button" class="boton" routerLink="/nuevaExperiencia">
-                Añadir experiencia
-              </button>
-            </div>
-  -->

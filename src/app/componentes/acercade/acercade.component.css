@@ -59,6 +59,7 @@
     margin:0 auto;
 }
 .texto{
+    position: relative;
     padding: 10%;
     display: flex;
     width: 100%;
@@ -69,11 +70,21 @@
 .texto h1{
     margin:0 auto;
 }
-.boton1{
+.btncontrol{
     position:absolute;
     bottom:15px;
-    right:15px;
-}
+    right:15px;  
+  }
+  .btnm{
+    display:flex;
+    background-color: grey;
+    color:black;
+    height:25px;
+    width: 25px;
+    justify-content: center;  
+    align-items: center;
+    border-radius: 3px;
+  }
 
 @media (max-width: 780px) {
     .perfil {
@@ -83,4 +94,5 @@
         width:200px;
         height:200px;
     }
+
   }

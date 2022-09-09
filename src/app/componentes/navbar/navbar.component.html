@@ -33,7 +33,8 @@
           <a class="nav-link" aria-current="page" href="/contacto">Contacto</a>
         </li>
         <li>
-          <button class="btn" type="submit" (click)="login()">Log In</button>
+          <button class="btn" type="submit" (click)="login()" *ngIf="!isLogged">Iniciar sesion</button>
+          <button class="btn" type="submit" (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesion</button>
         </li>
       </ul>
     </div>

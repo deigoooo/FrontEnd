@@ -1,7 +1,9 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Persona } from 'src/app/model/persona';
 import { InicioService } from 'src/app/servicios/inicio.service';
+import { TokenService } from 'src/app/servicios/token.service';
 
 @Component({
   selector: 'app-acercade',
@@ -9,14 +11,21 @@ import { InicioService } from 'src/app/servicios/inicio.service';
   styleUrls: ['./acercade.component.css']
 })
 export class AcercadeComponent implements OnInit {
-
+  isLogged= false;
   public persona : Persona | undefined;
   public editPersona: Persona | undefined;
 
-  constructor(private inicioService : InicioService) {}
+  constructor(private inicioService : InicioService,
+              private tokenService: TokenService,
+              private router:Router) {}
 
   ngOnInit(): void {
     this.getPer();
+    if(this.tokenService.getToken()){
+      this.isLogged=true;
+    }else{
+      this.isLogged=false;
+    }
   }
 
   public getPer():void{
@@ -28,6 +37,13 @@ export class AcercadeComponent implements OnInit {
         alert(error.message);
       }
     })
+  }
+  login(){
+    this.router.navigate(['/login'])
+  }
+  onLogOut():void{
+    this.tokenService.logOut();
+    window.location.reload();
   }
 
 }

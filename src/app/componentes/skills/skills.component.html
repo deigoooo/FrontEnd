@@ -1,4 +1,55 @@
 <div class="container-fluid vh-100">
+  <div class="tarjeta">        
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <h2 id="titulo">Habilidades</h2>
+        <div class="subrayado"></div>
+      </div>
+    </div>
+    <div class="row align-start text-uppercase" *ngFor="let skills of skillss">
+     <!--  <div class="col-md-12 col-lg-1">
+        <p></p>
+      </div> -->
+      <div class="col-md-12 col-lg-3 text-start">
+        <h4>{{ skills.habilidad }}</h4>
+      </div>
+      <div class="col-md-12 col-lg-7">
+        <div class="progress">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            style="width:{{ skills.nivel }}%"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >{{ skills.nivel }}</div>
+        </div>
+      </div>
+      <div class="col-md-12 col-lg-2">
+        <div class="btncontrol" *ngIf="isLogged">
+          <a
+            routerLink="/modificarSkills/{{skills.idSki}}"
+            class="btnm"
+            ><i class="fa fa-pencil"></i></a>
+          <a
+            (click)="onEliminarSkills(skills.idSki)"
+            class="btnd"
+          ><i class="fa fa-times"></i></a>
+        </div>
+      </div>
+    </div>
+    <button 
+        type="button"
+        class="boton"
+        routerLink="/nuevaSkills"
+        *ngIf="isLogged"
+        >Añadir habilidad</button>
+  </div>
+</div>
+
+
+
+
+<!-- <div class="container-fluid vh-100">
   <div class="tarjeta">
     <div class="row">
       <h2 id="titulo">Habilidades</h2>
@@ -21,7 +72,7 @@
           ></div>
         </div>
       </div>
-      <div class="col-md-2">
+      <div class="col-md-2" *ngIf="isLogged">
         <a
           routerLink="/modificarSkills/{{skills.idSki}}"
           class="btn text-muted bg-dark tooltips p-1"
@@ -33,29 +84,12 @@
           ><i class="fa fa-times"></i
         ></a>
       </div>
-<!--       <h3 style="color:#fff;">
-        {{ skills.habilidad }}
-        <a
-          routerLink="/modificarSkills/{{skills.idSki}}"
-          class="btn text-muted bg-dark tooltips p-1"
-          ><i class="fa fa-pencil"></i
-        ></a>
-        <a
-          (click)="onEliminarSkills(skills.idSki)"
-          class="btn text-dark bg-danger tooltips p-1 ps-2 pe-2"
-          ><i class="fa fa-times"></i
-        ></a>
-      </h3>
-      
-          {{ skills.nivel }}%
-        </div>
-      </div>   -->
     </div>
-<button type="button" class="boton" routerLink="/nuevaSkills">
+<button type="button" class="boton" routerLink="/nuevaSkills" *ngIf="isLogged">
   Añadir habilidades
 </button>
   </div>
 </div>
 
-
+ -->
 

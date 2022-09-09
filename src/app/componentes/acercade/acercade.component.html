@@ -14,10 +14,10 @@
     <div class="col-md-8">
       <div class="texto">
         <h4>{{ persona.sobre_mi }}</h4>
-        <div class="boton1">
+        <div class="btncontrol" *ngIf="isLogged">
           <a
             routerLink="/modificarAcercade/{{ persona.id }}"
-            class="btn text-muted bg-dark tooltips p-1"
+            class="btnm"
             ><i class="fa fa-pencil"></i
           ></a>
         </div>

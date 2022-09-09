@@ -1,71 +1,154 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
-
 * {
   margin: 0;
   padding: 0;
 }
 .container-fluid {
-  font-family: "Raleway", sans-serif;
-  background-image: url("../../../assets/img/experiencia.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  z-index: 1;
-  margin-top: 0;
-}
-.gama {
   display: flex;
-  height: 100%;
-  z-index: 2;
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
+  font-family: "Raleway", sans-serif;
+  background-color: #080e20;
   align-items: center;
+  text-align:center;
 }
-.tarjeta {
-  margin: 0px auto;
-  border-radius: 5px;
-  height: auto;
-  width: 65%;
-  background-color: rgba(255, 255, 255, 0.479);
-  padding: 10px;
-  text-align: center;
-}
-#experiencia {
+#titulo {
   padding-top: 5px;
   text-transform: uppercase;
   font-size: 3em;
   text-align: center;
   color: rgb(0, 0, 0);
 }
-.col-sm {
-  border-bottom: 1px solid #fff;
-}
 .subrayado {
   height: 4px;
-  width: 55%;
+  width: 34em;
   background-color: #a10411;
   margin: auto;
-  margin-bottom: 3em;
+  margin-bottom: 15px;
 }
-.boton {
-  margin-top: 10px;
-  background-color: #080e206c;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #fff;
-  outline: 2px solid #fff;
-  padding: 5px 15px;
-  position: relative;
-  overflow: hidden;
-  transition: color 1s;
+.tarjeta {
+  margin: 15px auto;
+  border-radius: 5px;
+  height: auto;
+  min-width: 70%;
+  max-width: 80%;
+  background-color: rgb(223, 223, 223);
+  padding: 20px;  
 }
-.boton:hover {
-  background-color: #fff;
-  color: #080e20;
+.lista{
+  list-style: none;
+  text-align: start;
+  border-left: 2px solid #c9c9c9;
+  margin-left:10px;
+  padding-left:10px;
+  color:#5a5a5a;
+}
+.lista li{
+  position:relative;
+}
+.lista li h4{
+  display:block;
+  padding-left: 10px;
+  padding-top: 5px;
+  transition:.3s ease all;
+}
+.lista h5{
+  display:block;
+  padding-left:10px;
+}
+.lista p{
+  display:block;
+  padding-left:10px;
+  padding-bottom: 5px;
+  margin-top: 0px !important;
+  margin-bottom: 0px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.lista li h4:hover{
+  color:black;
+}
+.lista li::before{
+  content:"";
+  display:block;
+  height: 12px;
+  width: 12px;
+  background: rgb(223, 223, 223);
+  border:2px solid #c9c9c9;
+  position:absolute;
+  left:-17px;
+  transform: rotate(45deg);
+  top:50%;
+  transition:.3s ease all;
+}
+.lista li:hover::before{
+  border: 2px solid #ff7300;
+  background-color: #ffbd86;
+  transition:.3s ease all;
+}
+.btncontrol{
+  display:flex;
+  margin-left: 10px;
+
+}
+.btnm{
+  display:flex;
+  background-color: grey;
+  color:black;
+  height:25px;
+  width: 25px;
+  justify-content: center;  
+  align-items: center;
+  border-radius: 3px;
+}
+.btnd{
+  display:flex;
+  background-color: #a10411;
+  color:black;
+  height:25px;
+  width: 25px;
+  justify-content: center;  
+  align-items: center;
+  border-radius: 3px;
+}
+.boton{
+  margin:10px 0;
+  padding:0 15px;
+  border-radius: 0;
+  border: 2px solid #080e20;
+  background-color: rgba(255, 255, 255, 0);
+  transition: .3s ease all;
+}
+.boton:hover{
+  background-color: #080e20;
+  color:#fff;
+}
+.boton:active{
+  background-color: #080e20;
+  color:#fff;
 }
 @media (max-width: 700px) {
-  .tarjeta {
+  .tarjeta{
     font-size: 60%;
-    width: 90%;
+    max-width: 90%;    
   }
+  .lista li h4{
+    font-size: medium;
+  }
+  .lista h5{
+    font-size:small;
+  }
+  .lista p{
+    font-size:smaller;
+  }
+  .btnd{
+    width:15px;
+    height: 15px;
+  }
+  .btnm{
+    width:15px;
+    height: 15px;
+  }
+  .subrayado{
+    width: 20em;
+  }
+
 }

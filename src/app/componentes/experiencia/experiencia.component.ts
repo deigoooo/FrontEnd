@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Experiencia } from 'src/app/model/experiencia';
 import { ExperienciaService } from 'src/app/servicios/experiencia.service';
+import { TokenService } from 'src/app/servicios/token.service';
 
 @Component({
   selector: 'app-experiencia',
@@ -10,16 +11,23 @@ import { ExperienciaService } from 'src/app/servicios/experiencia.service';
   styleUrls: ['./experiencia.component.css']
 })
 export class ExperienciaComponent implements OnInit {
-
+  isLogged= false;
   public experiencias:Experiencia[]=[];
   public modificarEducacion:Experiencia|undefined;
   public eliminarExperiencia:Experiencia|undefined;
 
-  constructor(private experienciaService:ExperienciaService, private router:Router) { }
+  constructor(private experienciaService:ExperienciaService, 
+              private router:Router,
+              private tokenService: TokenService) { }
 
   ngOnInit(): void {
     
     this.verExperiencia();
+    if(this.tokenService.getToken()){
+      this.isLogged=true;
+    }else{
+      this.isLogged=false;
+    }
 
   }
 
@@ -39,6 +47,13 @@ export class ExperienciaComponent implements OnInit {
       this.router.navigate(['']);
       }
     })
+  }
+  login(){
+    this.router.navigate(['/login'])
+  }
+  onLogOut():void{
+    this.tokenService.logOut();
+    window.location.reload();
   }
 
 }
