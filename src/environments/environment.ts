@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'https://backendap102.herokuapp.com/'
+  apiBaseUrl: 'https://backendap102.herokuapp.com'
 };
 /*mi heroku https://bkend101.herokuapp.com/*/
 /*
