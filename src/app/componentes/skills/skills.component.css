@@ -81,7 +81,7 @@
 @media (max-width: 700px) {
   .tarjeta{
     font-size: 60%;
-    max-width: 90%;    
+    min-width: 90%;    
   }
   .lista li h4{
     font-size: medium;

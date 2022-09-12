@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   apiBaseUrl: 'https://backendap102.herokuapp.com'
+  //apiBaseUrl: 'http://localhost:8080'
 };
 /*mi heroku https://bkend101.herokuapp.com/*/
 /*
